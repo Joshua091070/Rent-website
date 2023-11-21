@@ -1,0 +1,53 @@
+.contact form div {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact h4 {
+    margin-bottom: 30px;
+}
+
+/* .contact textarea {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: .5rem;
+} */
+
+.contact textarea,
+.contact input {
+    margin-bottom: 20px;
+    border: 1px solid #E5E5E5;
+    width: 100%;
+    padding: 8px 4px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact input::placeholder {
+    font-size: 12px;
+    color: grey;
+    letter-spacing: 1.3px;
+}
+
+
+.contact .shadow {
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .contact h4 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact form div {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contact input {
+        width: 100%;
+    }
+}

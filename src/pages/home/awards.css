@@ -1,0 +1,70 @@
+.awards {
+    background: var(--color-bg-secondary);
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.awards .heading {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.awards .heading p {
+    color: #27ae60;
+}
+
+.awards .heading h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.awards .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 4rem;
+}
+
+.awards .content .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    
+}
+
+.awards .content .icon span {
+    font-size: 30px;
+    background: #273D59;
+    padding: 1.5rem 2rem;
+    border-radius: 0 30px 0 30px;
+}
+
+.awards .content .box p {
+    font-size: 14px;
+    color: var(--color-faint);
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    .awards .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4rem;
+    }
+
+    
+    .awards .content .box {
+        border-top: 40px solid transparent;
+    }
+}
+
+@media (max-width: 600px) {
+    .awards .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4rem;
+    }
+}

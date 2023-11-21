@@ -1,0 +1,113 @@
+.team .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.content .card {
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid rgb(62 28 131 /10%);
+    box-shadow: none;
+    transition: 0.5rem;
+    padding: 1.5rem;
+    text-align: justify;
+    cursor: default;
+}
+
+.content .card:hover {
+    box-shadow: 0 0 20px 0 rgb(112 121 138 /18%);
+    cursor: pointer;
+}
+
+.content .card .btn {
+    padding: 0.8rem 1rem;
+}
+
+.team .content i {
+    color: #bec7d8;
+}
+
+.team .details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.team .img {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.team img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.team .img i {
+    color: #108be7;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 17px;
+    position: absolute;
+    top: 35px;
+    right: -10px;
+}
+
+.team .img::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 110px;
+    height: 110px;
+    border: 5px solid #edf0f5;
+    border-radius: 50%;
+}
+
+.btn-a {
+    background: #000;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+.btn-b {
+    padding: 0.7rem 1.4rem;
+    border-radius: 1.3rem;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background: var(--color-secondary);
+}
+
+.detail-ul {
+    width: 40%;
+    margin: 10px auto 10px;
+}
+
+.detail-ul i {
+    color: #848282;
+    background: #D3D3D303;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+    .team .content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .team .content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,35 @@
+.about {
+    margin-bottom: 80px;
+}
+
+.about .heading {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.about .container {
+    padding-top: 4rem;
+}
+
+.about p {
+    font-size: 15px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    text-indent: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .about .container {
+        flex-direction: column;
+    }
+    .about p {
+        padding: 0;
+    }
+
+    .about .container img {
+        margin-top: 50px;
+
+    }
+}

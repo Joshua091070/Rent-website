@@ -1,0 +1,31 @@
+.resent_card .text {
+    padding: 30px;
+}
+
+.resent_card .text h4 {
+    font-size: 14px;
+}
+
+.resent_card .text p {
+    font-size: 14px;
+    color: #72809d;
+}
+
+.resent_card .category span {
+    padding: 4px 15px;
+    border: 2px;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.resent_card .category i {
+    font-size: 20px;
+    color: #bec7d8;
+}
+
+.resent_card .button {
+    border-top: 1px solid #efe8f3;
+    padding: 10px 30px;
+
+}
